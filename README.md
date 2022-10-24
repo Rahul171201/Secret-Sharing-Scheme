@@ -62,3 +62,25 @@ secret_im[i][j][k] = encrypted_im[i][j][k]^rand_key[i][j][k]
 Hence the secret image is retreived.
 
 <img src="https://user-images.githubusercontent.com/70642284/197511301-64de4f87-dbe4-4656-b468-4483a9416312.png" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" height="400" />
+
+# RELATED WORK
+* Recursive Information Hiding Technique included by Sandeep Katta in his work https://shareok.org/bitstream/handle/11244/8178/KATTA_okstate_0664M_11654.pdf?sequence=1
+
+* K-N secret sharing algorithm for colored images using random numbers by Shayamalendu Kandar and Arnab Maiti in their paper https://www.researchgate.net/publication/50946075_K-N_SECRET_SHARING_VISUAL_CRYPTOGRAPHY_SCHEME_FOR_COLOR_IMAGE_USING_RANDOM_NUMBER
+
+* Shamir's Secret sharing algorithm : https://www.geeksforgeeks.org/shamirs-secret-sharing-algorithm-cryptography/
+
+* Sharing Secret Image with Encapsulated shares in Visual Cryptography : https://www.sciencedirect.com/science/article/pii/S1877050915032445
+
+# APPLICATIONS
+* A company needs to secure their vault's code. A single person knowing the code could act dishonestly or be unavailable when the vaults needs to be opened. SSS can be used in this situation to generate shares from the vault's code which are distributed to executives in the Company. The selected threshold and number of shares given to each executive can be select such that the vault is accessible only by (groups of) authorized individuals. If less than the threshold of shares were compromised, these shares alone would not be enough to determine the code.
+
+* International government agencies can use this method to transmit secret information safely and securely ensuring confidentiality of their information.
+
+# CONCLUSION
+Visual cryptography provides a secure way to transfer images. The advantage of visual cryptography is that it exploits human eyes to decrypt secret images with no computation required.
+Visual Cryptography allows easy decoding of the secret image by a simple stacking of the printed share transparencies.
+As visual cryptography schemes operate at the pixel levels, each pixel on one share must be matched correctly with the corresponding pixel on the other share. Superimposing the shares with even a slight change in the alignment results in a drastic degradation in the quality of the
+reconstructed image. 
+
+
