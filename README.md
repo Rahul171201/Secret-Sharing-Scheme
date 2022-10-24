@@ -4,5 +4,11 @@ eradicates the problem of misusing the shares. The regenerated image has better 
 
 ![image](https://user-images.githubusercontent.com/70642284/197492927-8d346646-0ae7-4319-b57f-70e8b392ceb8.png)
 
-#  
+#  CHALLENGES
+* There are various algorithms already implemented which involve the dividing the secret into n shares and then recreating the secret using any of the k shares.
+* However one of the challenges regarding the algorithm is that if anybody steals the share of any participant, then he may be able to access the secret information.
+* Also there may not be any form of authentication for the participant who actually has the share. Hence the secret is very much vulnerable.
+
+# PROPOSED ALGORITHM
+The proposed algorithm not only ensures the authentication of each particiapnt but also provides additional security for each of the shares.
 
