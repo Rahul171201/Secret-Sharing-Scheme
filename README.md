@@ -57,7 +57,7 @@ The original encrypted image is reconstructed by adding all the k shares along w
 ```
 Finally the original secret image is extracted by xoring the retrieved encrypted image with the dealer key :
 ```
-secret_im[i][j][k] = encrypted_im[i][j][k]^rand_key[i][j][k]
+secret_im[i][j][k] =  retreived_encrypted_image[i][j][k]^rand_key[i][j][k]
 ```
 Hence the secret image is retrieved.
 
